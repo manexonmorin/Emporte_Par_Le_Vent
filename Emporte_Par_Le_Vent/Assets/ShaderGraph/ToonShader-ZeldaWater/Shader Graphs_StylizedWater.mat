@@ -8,25 +8,33 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs_StylizedWater
-  m_Shader: {fileID: -6465566751694194690, guid: 39b9d45e64b3dda47ad0f840d75e4834,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _FlowMap:
         m_Texture: {fileID: 2800000, guid: 039a5ca0944a5ee4da8a74defd9be753, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamTexture:
         m_Texture: {fileID: 2800000, guid: 7579d117b412447449c8b975fa6dc8a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -43,14 +51,26 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BlendOp: 0
     - _Chopiness: 0.05
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
     - _FlowSpeed: 0.01
     - _FlowStrenght: 0.0075
     - _FoamDistance: 1.5
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _SampleGI: 0
     - _Size: 11.85
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DarkFoamColor: {r: 0, g: 0.27338916, b: 0.6792453, a: 0}
     - _LightFoamColor: {r: 1, g: 1, b: 1, a: 0}
     - _WaterColor: {r: 0, g: 0.37890288, b: 0.9433962, a: 0}
